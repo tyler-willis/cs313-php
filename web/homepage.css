@@ -1,0 +1,60 @@
+html {
+    background-image: url(bg.jpg);
+}
+
+#container {
+    background-color: white;
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    font-size: 82px;
+}
+
+#top_row img {
+    float: left;
+    overflow: auto;
+    margin-right: 10px;
+}
+
+#top_row p, #bottom_row p {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+#bottom_row img {
+    margin-left: 467px;
+}
+
+#bottom_row p {
+    float: left;
+    margin-bottom: -900px;
+    padding-left: 10px;
+}
+
+p {
+    font-family: arial;
+    font-size: 10p;
+}
+
+a {
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+img {
+    max-height: 400px;
+}
