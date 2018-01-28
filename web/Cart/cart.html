@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Your Shopping Cart</title>
+        <script type="text/javascript" src="formValidation.js"></script>
+        <link rel="stylesheet" type="text/css" href="stub.css">
+    </head>
+    <body onload="printTotals()" onreset="alert('Forms have been reset')">
+        <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <a href="viewcart.html">Back to Cart</a>
+        </header>
+        <div id="totals">
+            <p id="totals" onload="printTotals()"></p>
+        </div>
+        <form action="confirmation.html" oninput="validateAll()">
+            <!-- NAME -->
+            <input name="userName" size="15" oninput="validateName(this.value, 'name')"/>
+            <span style="color: red" class="name">Invalid Name</span>
+            <br>
+            
+            <!-- ADDRESS -->
+            <input name="address" size="20" oninput="validateAddress(this.value, 'address')"/>
+            <span style="color: red" class="address">Invalid Address</span>
+            <br>
+            
+            <!-- CITY -->
+            <input name="city" size="15" oninput="validateCity(this.value, 'city')"/>
+            <span style="color: red" class="city">Invalid City</span>
+            <br>
+            
+            <!-- STATE -->
+            <input name="state" size="1" oninput="validateState(this.value, 'state')"/>
+            <span style="color: red" class="state">Invalid State</span>
+            <br>
+            
+            <!-- ZIP CODE -->
+            <input name="zip" size="3" oninput="validateZip(this.value, 'zip')"/>
+            <span style="color: red" class="zip">Invalid ZIP Code</span>
+            <br>
+            
+            <!-- PHONE NUMBER -->
+            <input name="phone" size="10" oninput="validatePhone(this.value, 'phone')"/>
+            <span style="color: red" class="phone">Invalid Phone Number</span>
+            <br>
+            
+            <!-- BUTTONS -->
+            <button type="reset" value="Reset">Reset</button>
+            <button class="submitButton" type="submit" value="Submit" disabled>Submit</button>
+        </form>
+        <footer>
+            <p>THANK YOU FOR YOUR PATRONAGE</p>
+        </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

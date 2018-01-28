@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Discount Camping Gear</title>
+        <link rel="stylesheet" type="text/css" href="stub.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body onload="updateTotal()">
+        <div class="container">
+            <header>
+                <h1>Discount Camping Gear<br>Camping on the cheap since 1968</h1>
+                <a href="viewcart.html"><img src="cart.png" style="max-height: 36px;"></a>
+                <button onclick="sessionStorage.clear(); updateTotal()">Clear Cart</button>
+                <p id="total">0 GB - $0</p>
+            </header>
+            <div class="items">
+                <p id="addToCart">Click to add to Cart</p>
+                <div class="item" onmouseover="changeText(1)" onclick="addToCart('Small Tent', 19.99)">
+                    <p>Small Tent - $19.99</p>
+                </div>
+                <div class="item" onmouseover="changeText(2)" onclick="addToCart('Large Tent', 39.99)">
+                    <p>Large Tent - $39.99</p>
+                </div>
+                <div class="item" onmouseover="changeText(3)" onclick="addToCart('Sleeping Bag', 9.99)">
+                    <p>Sleeping Bag-$9.99</p>
+                </div>
+                <div class="item" onmouseover="changeText(4)" onclick="addToCart('Sleeping Pad', 7.99)">
+                    <p>Sleeping Pad-$7.99</p>
+                </div>
+                <div class="item" onmouseover="changeText(5)" onclick="addToCart('Backpack', 21.99)">
+                    <p>Backpack - $21.99</p>
+                </div>
+                <div class="item" onmouseover="changeText(6)" onclick="addToCart('Boots', 41.99)">
+                    <p>Boots - $41.99</p>
+                    <img src="10off.png" style="max-height: 50px;">
+                </div>
+            </div>
+            <div class="mainText">
+                <p>Welcome to RAM R us! We sell high quality, 100% downloadable RAM. Computer running slow? Just give us your credit card info and we'll make your computer lightning-fast, just like it was when it was brand new.</p>
+                <img id="info" src="img_1.jpg">
+            </div>
+            <footer>
+                <p>100% REAL, GUARANTEED!</p>
+            </footer>
+        </div>
+    </body>
+</html>
