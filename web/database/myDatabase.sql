@@ -47,3 +47,6 @@ INSERT INTO company (id, name)
 VALUES ('1', 'Nintendo')
 
 SELECT * FROM company;
+
+CREATE USER tyler WITH PASSWORD 'tyler';
+GRANT SELECT, INSERT, UPDATE ON game_store TO tyler;
