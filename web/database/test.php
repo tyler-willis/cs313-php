@@ -26,6 +26,19 @@
             echo "Error connecting to DB. Details: $ex";
             die();
         }
+        
+        $statement = $db->prepare('SELECT * FROM company');
+        $statement->execute();
+        
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            echo '<p>';
+            
+            echo $row['name'];
+            
+            echo '</p>';
+        }
+        
         ?>
         
     </body>
