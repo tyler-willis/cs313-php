@@ -6,10 +6,10 @@
         
         <?php
             
-        $dbUser = 'tyler';
-        $dbPassword = 'tyler';
-        $dbName = 'game_store';
-        $dbHost = 'localhost';
+        $dbUser = 'ucegihpgymiqsr';
+        $dbPassword = '07ed1204e14e2d3103cf2a8260367506829fdba53cf382643e899cebebddaea6';
+        $dbName = 'd2k53fohtc270j';
+        $dbHost = 'ec2-54-83-203-198.compute-1.amazonaws.com';
         $dbPort = '5432';
         
         try
