@@ -27,7 +27,7 @@
             die();
         }
         
-        $statement = $db->prepare('SELECT * FROM game_info');
+        $statement = $db->prepare('SELECT * FROM game');
         $statement->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
