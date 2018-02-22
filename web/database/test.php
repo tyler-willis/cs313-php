@@ -27,14 +27,16 @@
             die();
         }
         
-        $statement = $db->prepare('SELECT * FROM game');
+        $statement = $db->prepare('SELECT * FROM game JOIN game_info ON game,game_info = game_info.id');
         $statement->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
             echo '<p>';
             
-            echo $row['num_copies'];
+            echo "Number of Copies: " $row['num_copies'] . "<br>" . $row['title'] . "<br>" . $row['description'];
+            
+            echo "<br><br>";
             
             echo '</p>';
         }
