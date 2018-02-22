@@ -34,6 +34,8 @@
         
         $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         
+        echo $command;
+        
         $statement = $db.prepare($command);
         $statement->execute();
         
