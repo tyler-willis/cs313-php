@@ -27,7 +27,7 @@
             die();
         }
         
-        $statement = $db->prepare('SELECT * FROM game JOIN game_info ON game,game_info = game_info.id');
+        $statement = $db->prepare('SELECT * FROM game JOIN game_info ON game.game_info = game_info.id');
         $statement->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
