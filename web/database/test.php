@@ -34,7 +34,7 @@
         {
             echo '<p>';
             
-            echo "Number of Copies: " $row['num_copies'] . "<br>" . $row['title'] . "<br>" . $row['description'];
+            echo "Number of Copies: " . $row['num_copies'] . "<br>" . $row['title'] . "<br>" . $row['description'];
             
             echo "<br><br>";
             
