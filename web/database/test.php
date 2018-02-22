@@ -27,14 +27,14 @@
             die();
         }
         
-        $statement = $db->prepare('SELECT * FROM company');
+        $statement = $db->prepare('SELECT * FROM game_info');
         $statement->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
             echo '<p>';
             
-            echo $row['name'];
+            echo $row['num_copies'];
             
             echo '</p>';
         }
