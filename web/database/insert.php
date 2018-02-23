@@ -24,6 +24,8 @@
             die();
         }
         
+        echo "1";
+        
         $title = $_GET["title"];
         $console =$_GET["console"];
         $company =$_GET["company"];
@@ -36,6 +38,8 @@
         
         $statement = $db->prepare($command);
         
+        echo "2";
+        
         $statement->bindValue(':id', $pdo->lastInsertId('product_id_seq'));
         $statement->bindValue(':title', $title);
         $statement->bindValue(':description', $description);
@@ -45,11 +49,11 @@
         $statement->bindValue(':company', $company);
         $statement->bindValue(':console', $console);
         
-        
+        echo "3";
         
         $statement->execute();
         
-        echo 'Reached the end';
+        echo "4";
         
         ?>
     </body>
