@@ -1,0 +1,31 @@
+html {
+    background-image: url(bg.jpg);
+}
+
+#container {
+    background-color: azure;
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 11.3em;
+    background-color: saddlebrown;
+    
+}
+
+header h1 {
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 5em;
+    color: darkgrey;
+}
+
+#subheader {
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    
+}

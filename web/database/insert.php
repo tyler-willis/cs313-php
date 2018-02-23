@@ -56,9 +56,16 @@
         
         echo "3";
         
-        $statement->execute();
+        $result = $statement->execute();
         
-        echo "4";
+        if ($result)
+        {
+            echo "Worked";
+        }
+        else
+        {
+            echo "Didn't work";
+        }
         
         ?>
     </body>
