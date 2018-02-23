@@ -9,26 +9,12 @@
         $dbHost = 'ec2-54-83-203-198.compute-1.amazonaws.com';
         $dbPort = '5432';
         
-        $title = $_GET["title"];
-        $console =$_GET["console"];
-        $company =$_GET["company"];
-        $description =$_GET["description"];
-        $release_date =$_GET["release_date"];
-        $genre =$_GET["genre"];
-        $esrb =$_GET["esrb"];
-        
-        $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
-        
-        echo $command;
-        
         try
         {
             // Create the PDO connection
             $db = new PDO("pgsql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
             // this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
             $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-            $statement = $db.prepare($command);
-            $statement->execute();
         }
         catch (PDOException $ex)
         {
@@ -38,6 +24,33 @@
             die();
         }
         
+        $title = $_GET["title"];
+        $console =$_GET["console"];
+        $company =$_GET["company"];
+        $description =$_GET["description"];
+        $release_date =$_GET["release_date"];
+        $genre =$_GET["genre"];
+        $esrb =$_GET["esrb"];
+        
+        $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES (:title, :description, :release_date, :genre, :esrb, :company, :console)"; 
+        
+        $statement = $db.prepare($command);
+        
+        $statement->bindValue(':title', $title);
+        $statement->bindValue(':description', $description);
+        $statement->bindValue(':release_date', $release_date);
+        $statement->bindValue(':genre', $genre);
+        $statement->bindValue(':esrb', $esrb);
+        $statement->bindValue(':company', $company);
+        $statement->bindValue(':console', $console);
+        
+        $statement->execute();
+        
         ?>
     </body>
 </html>
+
+
+
+
+
