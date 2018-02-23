@@ -42,7 +42,6 @@
         
         /*
         $command = 'INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES (:title, :description, :release_date, :genre, :esrb, :company, :console)';
-        */
         
         $statement->bindValue(':title', $title);
         $statement->bindValue(':description', $description);
@@ -51,6 +50,7 @@
         $statement->bindValue(':esrb', $esrb);
         $statement->bindValue(':company', $company);
         $statement->bindValue(':console', $console);
+        */
         
         echo $command;
         
