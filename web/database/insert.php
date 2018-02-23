@@ -49,6 +49,8 @@
         
         $statement->execute();
         
+        echo 'Reached the end';
+        
         ?>
     </body>
 </html>
