@@ -37,7 +37,7 @@
         
         echo "2";
         
-        $command = "INSERT INTO game_info (id, title, description, release_date, genre, esrb, company, console) VALUES ('$id', '$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
+        $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         
         echo $command;
         
