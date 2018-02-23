@@ -32,10 +32,11 @@
         $genre =$_GET["genre"];
         $esrb =$_GET["esrb"];
         
-        $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES (:title, :description, :release_date, :genre, :esrb, :company, :console)"; 
+        $command = 'INSERT INTO game_info (id, title, description, release_date, genre, esrb, company, console) VALUES (:id, :title, :description, :release_date, :genre, :esrb, :company, :console)'; 
         
         $statement = $db->prepare($command);
         
+        $statement->bindValue(':id', $pdo->lastInsertId('product_id_seq'));
         $statement->bindValue(':title', $title);
         $statement->bindValue(':description', $description);
         $statement->bindValue(':release_date', $release_date);
