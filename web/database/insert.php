@@ -40,7 +40,7 @@
         $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         */
         
-        $command = INSERT INTO game_info (title) VALUES ('TEST');
+        $command = "INSERT INTO game_info (title) VALUES ('TEST')";
         
         echo $command;
         
