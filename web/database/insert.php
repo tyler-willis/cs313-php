@@ -35,13 +35,13 @@
         $genre =$_GET["genre"];
         $esrb =$_GET["esrb"];
         
+        echo "2";
+        
         $command = "INSERT INTO game_info (id, title, description, release_date, genre, esrb, company, console) VALUES ('$id', '$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         
         echo $command;
         
         $statement = $db->prepare($command);
-        
-        echo "2";
         
         echo "3";
         
