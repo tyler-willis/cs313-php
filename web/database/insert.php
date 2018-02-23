@@ -26,7 +26,7 @@
         
         echo "1";
         
-        $id = $pdo->lastInsertId('product_id_seq');
+        // $id = $pdo->lastInsertId('product_id_seq');
         $title = $_GET["title"];
         $console =$_GET["console"];
         $company =$_GET["company"];
