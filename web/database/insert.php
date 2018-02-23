@@ -26,7 +26,6 @@
         
         echo "1";
         
-        // $id = $pdo->lastInsertId('product_id_seq');
         $title = $_GET["title"];
         $console =$_GET["console"];
         $company =$_GET["company"];
@@ -36,11 +35,20 @@
         $esrb =$_GET["esrb"];
         
         echo "2";
+        
          /*
         $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         */
         
-        $command = "INSERT INTO game_info (title) VALUES ('TEST')";
+        $command = 'INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES (:title, :description, :release_date, :genre, :esrb, :company, :console)';
+        
+        $statement->bindValue(':title', $title);
+        $statement->bindValue(':description', $description);
+        $statement->bindValue(':release_date', $release_date);
+        $statement->bindValue(':genre', $genre);
+        $statement->bindValue(':esrb', $esrb);
+        $statement->bindValue(':company', $company);
+        $statement->bindValue(':console', $console);
         
         echo $command;
         
