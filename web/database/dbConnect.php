@@ -1,5 +1,5 @@
 <?php
-    function getDb()
+    function get_db()
     {
     $dbUser = 'ucegihpgymiqsr';
     $dbPassword = '07ed1204e14e2d3103cf2a8260367506829fdba53cf382643e899cebebddaea6';
