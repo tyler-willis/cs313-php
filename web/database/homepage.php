@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Video Game Store</title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>VIDEO GAMES<br>ARCHIVE</h1>
+            </header>
+            <div id="subheader">
+                <a href="test.html">View all Video Games</a>
+                <a href="insert.html">Add a game</a>
+            </div>
+        
+            <?php
+
+            require("dbConnect.php");
+
+            $db = get_db();
+
+            $statement = $db->prepare('SELECT * FROM game JOIN game_info ON game.game_info = game_info.id');
+            $statement->execute();
+        
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                echo '<p>';
+            
+                echo "Number of Copies: " . $row['num_copies'] . "<br>" . $row['title'] . "<br>" . $row['description'];
+            
+                echo "<br><br>";
+            
+                echo '</p>';
+            }
+
+            ?>
+            </p>
+                
+        </div>
+    </body>
+</html>
