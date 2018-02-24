@@ -1,5 +1,6 @@
 <?php
-
+    function getDb()
+    {
     $dbUser = 'ucegihpgymiqsr';
     $dbPassword = '07ed1204e14e2d3103cf2a8260367506829fdba53cf382643e899cebebddaea6';
     $dbName = 'd2k53fohtc270j';
@@ -21,5 +22,8 @@
         die();
     }
 
+    echo "function called";
+        
     return $db;
+    }
 ?>
