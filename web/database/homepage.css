@@ -5,6 +5,7 @@ html {
 #container {
     background-color: azure;
     max-width: 1200px;
+    min-height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
