@@ -14,7 +14,7 @@
             </div>
         
             <p1>
-            Welcome to Video Games Archive! We llove all kinds of video games here. Our goal is to create a list<br>of all video games ever played! Visit the archive and add any<br>games you don't see on the list.
+            Welcome to Video Games Archive! We love<br>all kinds of video games here. Our goal is to create a list<br>of all video games ever played! Visit the archive and add any<br>games you don't see on the list.
             </p1>
                 
         </div>
