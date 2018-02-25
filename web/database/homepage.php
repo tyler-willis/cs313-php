@@ -13,7 +13,9 @@
                 <a href="insert.html">Add a game</a>
             </div>
         
-            
+            <p1>
+            Welcome to Viddeo Games Archive! Our goal here is to create a list of all video games evvery played! Visit the archive and add any games you don't see on the list.
+            </p1>
                 
         </div>
     </body>
