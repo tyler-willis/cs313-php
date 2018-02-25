@@ -29,7 +29,7 @@
             
                 echo "<strong>" . $row['title'] . "</strong><br>" . $row['company'] . " - " . $row['console'] . "<br>";
             
-                echo $row['genre'] . " - ESRB Rating: " . row['esrb'];
+                echo $row['genre'] . " - ESRB Rating: " . row['esrb'] . "<br>";
                 
                 echo $row['description'];
             
