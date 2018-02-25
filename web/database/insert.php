@@ -57,6 +57,11 @@
         $statement = $db->prepare($command);
         $result = $statement->execute();
         
+        // Redirect to archive page
+        
+        header("Location: archive.php");
+        exit();
+        
         ?>
     </body>
 </html>
