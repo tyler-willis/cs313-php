@@ -1,18 +1,27 @@
 <html>
     <head>
         <title>Insert Data</title>
+        <link rel="stylesheet" href="homepage.css">
     </head>
     <body>
-        <form action="insert.php" method="get">
-            Title: <input type="text" name="title"><br>
-            Console: <input type="text" name="console"><br>
-            Company: <input type="text" name="company"><br>
-            Description: <input type="text" name="description"><br>
-            Release Date: <input type="text" name="release_date"><br>
-            genre: <input type="text" name="genre"><br>
-            ESRB Rating: <input type="text" name="esrb"><br>
-            <input type="submit">
-        </form>
+        <header>
+            <h1>VIDEO GAMES<br>ARCHIVE</h1>
+        </header>
+        <div id="subheader">
+            <a href="archive.php">View Archive</a>
+            <a href="insert.html">Add a game</a>
+        </div>
+        <div id="container">
+            <form action="insert.php" method="get">
+                Title: <input type="text" name="title"><br>
+                Console: <input type="text" name="console"><br>
+                Company: <input type="text" name="company"><br>
+                Description: <input type="text" name="description"><br>
+                Release Date: <input type="text" name="release_date"><br>
+                genre: <input type="text" name="genre"><br>
+                ESRB Rating: <input type="text" name="esrb"><br>
+                <input type="submit">
+            </form>
+        </div>
     </body>
-    
 </html>
