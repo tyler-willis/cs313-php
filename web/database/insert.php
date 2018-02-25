@@ -24,8 +24,6 @@
             die();
         }
         
-        echo "1";
-        
         $title = $_GET["title"];
         $console =$_GET["console"];
         $company =$_GET["company"];
@@ -33,10 +31,7 @@
         $release_date =$_GET["release_date"];
         $genre =$_GET["genre"];
         $esrb =$_GET["esrb"];
-        
-        echo "2";
-        
-        
+
         $command = "INSERT INTO game_info (title, description, release_date, genre, esrb, company, console) VALUES ('$title', '$description', '$release_date', '$genre', '$esrb', '$company', '$console')"; 
         
         
@@ -57,8 +52,11 @@
         
         $last_id = $db->lastInsertId();
         
-        echo $last_id;
+        $command = "INSERT INTO game (num_copies, game_info) VALUES (1, '$last_id')";
 
+        $statement = $db->prepare($command);
+        $result = $statement->execute();
+        
         ?>
     </body>
 </html>
