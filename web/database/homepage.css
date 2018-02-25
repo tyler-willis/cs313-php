@@ -27,7 +27,6 @@ header h1 {
     width: 100%;
     background-color: bisque;
     text-align: center;
-    height: 100%
 }
 
 #game {
@@ -48,7 +47,6 @@ a {
     font-size: 1.5em;
     font-family: arial;
     margin: 12px;
-    padding: 5px;
 }
 
 a:hover {
