@@ -40,3 +40,15 @@ header h1 {
 form {
     margin: 10px;
 }
+
+a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.1em;
+}
+
+a:hover {
+    background-color: darkred;
+    color: whitesmoke;
+}
