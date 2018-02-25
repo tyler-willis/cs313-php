@@ -34,9 +34,9 @@ header h1 {
     border-left: 8px solid red;
     background-color: lightgrey;
     margin: 10px;
+    padding-bottom: 10px;
 }
 
 form {
     margin: 10px;
-    padding-bottom: 10px;
 }
