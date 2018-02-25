@@ -29,3 +29,9 @@ header h1 {
     text-align: center;
     
 }
+
+#game {
+    border-left: 8px solid red;
+    background-color: lightgrey;
+    margin: 10px;
+}
