@@ -52,23 +52,13 @@
         $statement->bindValue(':console', $console);
         */
         
-        echo $command;
-        
         $statement = $db->prepare($command);
-        
-        echo "3";
-        
         $result = $statement->execute();
         
-        if ($result)
-        {
-            echo "Worked";
-        }
-        else
-        {
-            echo "Didn't work";
-        }
+        $last_id = $db->lastInsertId();
         
+        echo $last_id;
+
         ?>
     </body>
 </html>
