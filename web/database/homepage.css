@@ -53,3 +53,10 @@ a:hover {
     background-color: darkred;
     color: whitesmoke;
 }
+
+p1 {
+    margin: 10px;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    text-align: center;
+}
