@@ -45,7 +45,8 @@ a {
     background-color: whitesmoke;
     text-decoration: none;
     color: darkred;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-family: arial;
 }
 
 a:hover {
