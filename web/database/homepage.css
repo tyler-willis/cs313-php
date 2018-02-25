@@ -47,6 +47,7 @@ a {
     color: darkred;
     font-size: 1.5em;
     font-family: arial;
+    margin: 10px;
 }
 
 a:hover {
