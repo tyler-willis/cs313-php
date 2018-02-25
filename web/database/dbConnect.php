@@ -1,8 +1,6 @@
 <?php
     function get_db()
-    {
-    echo "function called";
-        
+    {   
     $db = NULL;
         
     $dbUser = 'ucegihpgymiqsr';
