@@ -5,7 +5,6 @@ html {
 #container {
     background-color: azure;
     max-width: 1200px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,7 +33,7 @@ header h1 {
     border-left: 8px solid red;
     background-color: lightgrey;
     margin: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 form {
