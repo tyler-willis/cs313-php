@@ -27,7 +27,7 @@
             {
                 echo '<div id="game">';
             
-                echo "<strong>" . $row['title'] . "</strong>" . "<br>" . $row['company'] . " " . $row['console'] . "<br>";
+                echo "<strong>" . $row['title'] . "</strong> -" . $row['console'] . "<br>" . $row['company'] . " " . $row['console'] . "<br>";
             
                 echo $row['genre'] . " - ESRB Rating: " . row['esrb'] . "<br>";
                 
