@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+}
+
+#container {
+    width: 800;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    text-align: center
+}
+
+#drawingSpace {
+    height: 600;
+    border: 2px solid black;
+}
